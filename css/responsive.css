@@ -431,6 +431,10 @@
         box-shadow: var(--shadow);
 
         box-sizing: border-box;
+
+        transform: scale(0.90);
+
+        transform-origin: center center;
     }
 
 
@@ -552,19 +556,32 @@
     }
 
     .first-name,
-    .middle-name,
-    .last-name {
-        display: block;
+.middle-name,
+.last-name {
+    display: block;
 
-        width: 100%;
+    width: 100%;
 
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 
-        text-align: center;
+    text-align: center;
 
-        box-sizing: border-box;
-    }
+    box-sizing: border-box;
+}
+
+/* Reduce NANCY and EVELYN only */
+.first-name,
+.middle-name {
+    font-size: 2.5em;
+    line-height: 0.95;
+}
+
+/* Keep KAREMU at its current size */
+.last-name {
+    font-size: 1.15em;
+    line-height: 0.65;
+}
 
 
     /* ------------------------------------------------------
@@ -576,8 +593,8 @@
         margin: 12px auto 0;
         padding: 0;
 
-        font-size: 0.72rem;
-        line-height: 1.2;
+        font-size: 1.95rem;
+        line-height: 1.25;
 
         letter-spacing: 3px;
 
@@ -632,7 +649,7 @@
 
     .divider {
         width: 1px;
-        height: 48px;
+        height: 58px;
 
         flex-shrink: 0;
 
@@ -694,7 +711,7 @@
     .tagline {
         width: 100%;
 
-        margin: 18px auto 0;
+        margin: 0px auto 0;
         padding: 0 0 6px;
 
         display: flex;
@@ -720,8 +737,8 @@
 
         display: block;
 
-        font-size: 0.66rem;
-        line-height: 1.8;
+        font-size: 2.0rem;
+        line-height: 1.9;
 
         letter-spacing: 2px;
 
