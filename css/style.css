@@ -1,0 +1,296 @@
+/*=====================================
+            RESET
+=====================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+/*=====================================
+             PAGE
+=====================================*/
+
+body{
+
+    background:var(--background);
+
+    font-family:'Montserrat',sans-serif;
+
+}
+
+.page{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:18px;
+
+    overflow:hidden;
+
+}
+
+/*=====================================
+             CARD
+=====================================*/
+
+.card{
+
+    width:100%;
+
+    max-width:1080px;
+
+    height:650px;
+
+    background:var(--white);
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+/*=====================================
+          CARD LAYOUT
+=====================================*/
+
+.card{
+
+    display:grid;
+
+    grid-template-columns:58% 42%;
+
+}
+
+.card-left{
+
+    padding:45px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.card-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    padding-top:12px;
+
+    overflow:hidden;
+
+    background:var(--white);
+
+}
+
+/*=====================================
+              HERO
+=====================================*/
+
+.hero{
+
+    text-align:center;
+
+    margin-top:10px;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    line-height:.9;
+
+}
+
+.first-name{
+
+    display:block;
+
+    font-size:72px;
+
+    color:var(--black);
+
+}
+
+.middle-name{
+
+    display:block;
+
+    font-size:72px;
+
+    color:var(--pink);
+
+}
+
+.last-name{
+
+    display:block;
+
+    margin-top:12px;
+
+    font-size:32px;
+
+    letter-spacing:9px;
+
+    color:var(--navy);
+
+}
+
+.title{
+
+    margin-top:22px;
+
+    font-size:14px;
+
+    letter-spacing:5px;
+
+    color:#777;
+
+}
+
+/*=====================================
+        NANCY PORTRAIT
+=====================================*/
+
+.nancy-image{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    object-position:40% 30%;
+
+}
+
+/*=====================================
+            BRANDS
+=====================================*/
+
+.brands{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:45px;
+
+}
+
+.brand{
+
+    width:170px;
+
+}
+
+.brand img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.divider{
+
+    width:1px;
+
+    height:95px;
+
+    background:var(--gold);
+
+}
+
+/*=====================================
+           SCAN SECTION
+=====================================*/
+
+.scan-section{
+
+    margin-top:35px;
+
+    text-align:center;
+
+}
+
+.scan-section h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:var(--pink);
+
+    margin-bottom:18px;
+
+}
+
+.qr-image{
+
+    width:95px;
+
+    height:95px;
+
+    margin:auto;
+
+    display:block;
+
+}
+
+/*=====================================
+             TAGLINE
+=====================================*/
+
+.tagline{
+
+    margin-top:-10px;
+
+    text-align:center;
+
+}
+
+.tagline p {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--navy);
+    text-transform: uppercase;
+
+    white-space: nowrap;
+    width: max-content;
+    max-width: none;
+
+    margin-left: auto;
+    margin-right: auto;
+}
