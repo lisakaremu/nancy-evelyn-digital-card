@@ -647,4 +647,55 @@
 
         white-space: nowrap;
     }
+
+/* =========================================
+   FINAL MOBILE VISUAL REFINEMENTS
+========================================= */
+
+/* 1. Soft curved corners on all 4 image corners */
+.card-right {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.nancy-image {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+/* 2. Reduce NANCY / EVELYN significantly */
+.hero h1,
+h1 {
+    font-size: clamp(2.75rem, 13vw, 4rem);
+    line-height: 0.88;
+}
+
+/* Keep all name lines centered */
+.first-name,
+.middle-name,
+.last-name {
+    text-align: center;
+    width: 100%;
+}
+
+/* 3. Enlarge FOUNDING DIRECTOR */
+.title {
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+/* 4. Enlarge bottom tagline */
+.tagline p {
+    font-size: 0.62rem;
+    letter-spacing: 2.2px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+/* Give tagline enough breathing room */
+.tagline {
+    padding: 0 8px 8px;
+}
 }
