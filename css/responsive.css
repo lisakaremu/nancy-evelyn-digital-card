@@ -652,30 +652,31 @@
    FINAL MOBILE VISUAL REFINEMENTS
 ========================================= */
 
-/* 1. Soft curved corners on all 4 image corners */
+/* 1. Strong soft rounding on all 4 portrait corners */
 .card-right {
-    border-radius: 18px;
-    overflow: hidden;
+    border-radius: 22px !important;
+    overflow: hidden !important;
 }
 
 .nancy-image {
-    border-radius: 18px;
-    overflow: hidden;
+    border-radius: 22px !important;
+    overflow: hidden !important;
 }
 
 /* 2. Reduce NANCY / EVELYN significantly */
 .hero h1,
-h1 {
-    font-size: clamp(2.75rem, 13vw, 4rem);
-    line-height: 0.88;
+.card-left .hero h1 {
+    font-size: clamp(2.15rem, 10vw, 3rem) !important;
+    line-height: 0.88 !important;
 }
 
 /* Keep all name lines centered */
 .first-name,
 .middle-name,
 .last-name {
-    text-align: center;
-    width: 100%;
+    width: 100% !important;
+    text-align: center !important;
+}
 }
 
 /* 3. Enlarge FOUNDING DIRECTOR */
