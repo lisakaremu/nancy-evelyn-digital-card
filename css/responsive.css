@@ -5,9 +5,360 @@
 
 @media (max-width: 1024px) {
 
-    /*==============================================
+    /*==================================================
         VIEWPORT / PAGE
-    ==============================================*/
+    ==================================================*/
+
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .page {
+        width: 100%;
+        min-height: 100dvh;
+
+        padding: 16px;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        overflow-x: hidden;
+    }
+
+
+    /*==================================================
+        DIGITAL CARD
+    ==================================================*/
+
+    .card {
+        width: 100%;
+        max-width: 620px;
+
+        height: auto;
+        min-height: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        background: var(--white);
+
+        border-radius: 28px;
+        overflow: hidden;
+
+        box-shadow: var(--shadow);
+    }
+
+
+    /*==================================================
+        NANCY PORTRAIT
+    ==================================================*/
+
+    .card-right {
+        order: 1;
+
+        width: 100%;
+        height: auto;
+
+        padding: 18px 18px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: var(--white);
+
+        overflow: hidden;
+
+        box-sizing: border-box;
+    }
+
+    .nancy-image {
+        width: 100%;
+        height: auto;
+
+        max-height: 500px;
+
+        display: block;
+
+        object-fit: contain;
+        object-position: center center;
+    }
+
+
+    /*==================================================
+        LEFT CONTENT AREA
+    ==================================================*/
+
+    .card-left {
+        order: 2;
+
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+        min-height: 0;
+
+        padding: 26px 20px 22px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: flex-start;
+
+        text-align: center;
+
+        overflow: visible;
+
+        box-sizing: border-box;
+    }
+
+    .card-left > * {
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        box-sizing: border-box;
+    }
+
+
+    /*==================================================
+        HERO / NAME
+    ==================================================*/
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    h1 {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+        padding: 0;
+
+        font-size: clamp(3.2rem, 13vw, 5.6rem);
+        line-height: 0.88;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .first-name,
+    .middle-name,
+    .last-name {
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .title {
+        width: 100%;
+
+        margin: 16px auto 0;
+        padding: 0;
+
+        font-size: clamp(0.56rem, 2.1vw, 0.78rem);
+        line-height: 1.25;
+
+        letter-spacing: clamp(2px, 0.9vw, 5px);
+
+        text-align: center;
+
+        white-space: nowrap;
+    }
+
+
+    /*==================================================
+        BRAND LOGOS
+    ==================================================*/
+
+    .brands {
+        width: 100%;
+        max-width: 420px;
+
+        height: auto;
+        min-height: 0;
+
+        margin: 30px auto 0;
+        padding: 0 4px;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 18px;
+
+        box-sizing: border-box;
+    }
+
+    .brand {
+        flex: 1 1 0;
+        min-width: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .brand img {
+        width: auto;
+        height: auto;
+
+        max-width: 92px;
+        max-height: 58px;
+
+        display: block;
+
+        object-fit: contain;
+    }
+
+    .divider {
+        width: 1px;
+        height: 48px;
+
+        flex-shrink: 0;
+
+        margin: 0 4px;
+
+        background: var(--gold);
+    }
+
+
+    /*==================================================
+        SCAN + QR SECTION
+    ==================================================*/
+
+    .scan-section {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 30px auto 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .scan-section h3 {
+        width: 100%;
+
+        margin: 0 auto 12px;
+        padding: 0;
+
+        font-size: clamp(0.88rem, 3.4vw, 1.08rem);
+        line-height: 1.2;
+
+        text-align: center;
+    }
+
+    .qr-image {
+        width: clamp(72px, 18vw, 96px);
+        height: auto;
+
+        display: block;
+
+        margin: 0 auto;
+
+        object-fit: contain;
+    }
+
+
+    /*==================================================
+        TAGLINE
+    ==================================================*/
+
+    .tagline {
+        width: 100%;
+        max-width: 100%;
+
+        min-height: 0;
+
+        margin: 30px auto 0;
+        padding: 0;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        overflow: visible;
+
+        box-sizing: border-box;
+    }
+
+    .tagline p {
+        width: auto;
+        max-width: 100%;
+
+        margin: 0 auto;
+        padding: 0;
+
+        font-size: clamp(0.46rem, 1.8vw, 0.68rem);
+        line-height: 1.3;
+
+        letter-spacing: clamp(1.5px, 0.65vw, 3px);
+
+        text-align: center;
+
+        white-space: nowrap;
+
+        box-sizing: border-box;
+    }
+}
+
+
+/*==================================================
+    SMALL PHONES
+==================================================*/
+
+/*==================================================
+    SMALL PHONES
+    Entire digital card visible in one viewport
+==================================================*/
+
+@media (max-width: 480px) {
 
     html,
     body {
@@ -22,54 +373,45 @@
         height: 100dvh;
         min-height: 100dvh;
 
-        padding: 10px;
+        padding: 8px;
 
         display: flex;
         justify-content: center;
         align-items: center;
 
         overflow: hidden;
+
+        box-sizing: border-box;
     }
-
-
-    /*==============================================
-        DIGITAL CARD
-    ==============================================*/
 
     .card {
         width: 100%;
-        max-width: 620px;
+        max-width: 430px;
 
-        height: calc(100dvh - 20px);
+        height: calc(100dvh - 16px);
         min-height: 0;
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 44% 56%;
+        grid-template-rows: 42% 58%;
 
-        background: var(--white);
-
-        border-radius: 28px;
+        border-radius: 24px;
 
         overflow: hidden;
-
-        box-shadow: var(--shadow);
     }
 
 
-    /*==============================================
-        NANCY PORTRAIT
-        Keep full portrait visible
-    ==============================================*/
+    /* PORTRAIT */
 
     .card-right {
+        order: initial;
+
         grid-row: 1;
-        grid-column: 1;
 
         width: 100%;
         height: 100%;
 
-        min-height: 0;
+        padding: 10px 14px 0;
 
         display: flex;
         justify-content: center;
@@ -77,126 +419,101 @@
 
         overflow: hidden;
 
-        background: var(--white);
+        box-sizing: border-box;
     }
 
     .nancy-image {
+    width: 100%;
+    height: 100%;
+
+    max-height: none;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center center;
+
+    border-radius: 18px;
+}
+
+
+    /* CONTENT AREA */
+
+    .card-left {
+        order: initial;
+
+        grid-row: 2;
+
         width: 100%;
         height: 100%;
+        min-height: 0;
 
-        display: block;
+        padding: 8px 14px 10px;
 
-        object-fit: contain;
-        object-position: center center;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: space-between;
+
+        text-align: center;
+
+        overflow: hidden;
+
+        box-sizing: border-box;
     }
 
 
-    /*==============================================
-        LEFT CONTENT AREA
-    ==============================================*/
-
-    .card-left {
-    grid-row: 2;
-    grid-column: 1;
-
-    width: 100%;
-    max-width: 100%;
-
-    height: 100%;
-    min-height: 0;
-
-    padding: 10px 18px 8px;
-
-    box-sizing: border-box;
-
-    display: grid;
-
-    grid-template-rows:
-        auto
-        auto
-        auto
-        1fr;
-
-    align-content: stretch;
-    justify-items: center;
-
-    gap: 6px;
-
-    overflow: hidden;
-}
-
-.card-left > * {
-    width: 100%;
-    max-width: 100%;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    box-sizing: border-box;
-}
-
-
-    /*==============================================
-        HERO / NAME
-    ==============================================*/
+    /* NAME */
 
     .hero {
-    width: 100%;
-    max-width: 100%;
+        width: 100%;
 
-    margin: 0 auto;
-    padding: 0;
+        margin: 0 auto;
+        padding: 0;
 
-    text-align: center;
+        display: flex;
+        flex-direction: column;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        align-items: center;
+        justify-content: center;
 
-    box-sizing: border-box;
-}
+        text-align: center;
+    }
 
     h1 {
     width: 100%;
-    max-width: 100%;
 
     margin: 0 auto;
     padding: 0;
 
-    font-size: clamp(1.65rem, 5vw, 2.35rem);
-    line-height: 0.88;
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+    line-height: 0.84;
 
     text-align: center;
-
-    box-sizing: border-box;
 }
 
-.first-name,
-.middle-name,
-.last-name {
-    display: block;
+    .first-name,
+    .middle-name,
+    .last-name {
+        width: 100%;
 
-    width: 100%;
-    max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
 
-    margin-left: auto;
-    margin-right: auto;
-
-    text-align: center;
-
-    box-sizing: border-box;
-}
+        text-align: center;
+    }
 
     .title {
-        margin: 7px 0 0;
+        width: 100%;
+
+        margin: 8px auto 0;
         padding: 0;
 
-        font-size: clamp(0.52rem, 1.7vw, 0.7rem);
+        font-size: clamp(0.42rem, 1.8vw, 0.58rem);
+        line-height: 1.1;
 
-        line-height: 1.2;
-
-        letter-spacing: clamp(2px, 0.6vw, 3px);
+        letter-spacing: clamp(1.5px, 0.65vw, 3px);
 
         text-align: center;
 
@@ -204,98 +521,85 @@
     }
 
 
-    /*==============================================
-        BRAND LOGOS
-    ==============================================*/
+    /* BRAND LOGOS */
 
     .brands {
-    width: 100%;
-    max-width: 100%;
+        width: 100%;
+        max-width: 320px;
 
-    height: auto;
-    min-height: 0;
+        margin: 10px auto 0;
+        padding: 0;
 
-    margin: 2px auto;
-    padding: 0;
+        display: flex;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
 
-    gap: 14px;
-
-    box-sizing: border-box;
-}
+        gap: 10px;
+    }
 
     .brand {
-    flex: 1 1 0;
-    min-width: 0;
+        flex: 1 1 0;
+        min-width: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .brand img {
-        width: auto;
-        height: auto;
+    width: auto;
+    height: auto;
 
-        max-width: 82px;
-        max-height: 50px;
+    max-width: 92px;
+    max-height: 58px;
 
-        display: block;
+    display: block;
 
-        object-fit: contain;
-    }
+    object-fit: contain;
+}   
 
     .divider {
         width: 1px;
-        height: 40px;
+        height: 34px;
 
         flex-shrink: 0;
 
-        margin: 0;
-
-        background: var(--gold);
+        margin: 0 3px;
     }
 
 
-    /*==============================================
-        SCAN + QR SECTION
-    ==============================================*/
+    /* SCAN + QR */
 
     .scan-section {
-    width: 100%;
-    max-width: 100%;
+        width: 100%;
 
-    margin: 0 auto;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    box-sizing: border-box;
-}
-
-    .scan-section h3 {
-        margin: 0 0 4px;
+        margin: 10px auto 0;
         padding: 0;
 
-        font-size: clamp(0.82rem, 2.8vw, 1.05rem);
+        display: flex;
+        flex-direction: column;
 
-        line-height: 1.1;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .scan-section h3 {
+        width: 100%;
+
+        margin: 0 auto 5px;
+        padding: 0;
+
+        font-size: clamp(0.68rem, 3vw, 0.88rem);
+        line-height: 1.05;
 
         text-align: center;
     }
 
     .qr-image {
-        width: clamp(40px, 9vw, 56px);
+        width: clamp(42px, 11vw, 56px);
         height: auto;
 
         display: block;
@@ -306,44 +610,41 @@
     }
 
 
-    /*==============================================
-        TAGLINE
-    ==============================================*/
+    /* TAGLINE — ALWAYS VISIBLE */
 
     .tagline {
-    width: 100%;
-    max-width: 100%;
+        width: 100%;
+        max-width: 100%;
 
-    min-height: 0;
+        margin: 8px auto 0;
+        padding: 0;
 
-    margin: 0 auto;
-    padding: 0 0 14px;
+        display: flex;
 
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+        justify-content: center;
+        align-items: center;
 
-    text-align: center;
+        flex-shrink: 0;
 
-    overflow: hidden;
+        text-align: center;
 
-    box-sizing: border-box;
-}
+        overflow: visible;
+    }
 
     .tagline p {
-    width: 100%;
-    max-width: 100%;
+        width: auto;
+        max-width: 100%;
 
-    margin: 0 auto;
-    padding: 0;
+        margin: 0 auto;
+        padding: 0;
 
-    font-size: clamp(0.46rem, 1.55vw, 0.66rem);
-    line-height: 1.25;
+        font-size: clamp(0.34rem, 1.45vw, 0.5rem);
+        line-height: 1.15;
 
-    letter-spacing: clamp(1.8px, 0.55vw, 3px);
+        letter-spacing: clamp(0.8px, 0.4vw, 1.8px);
 
-    text-align: center;
+        text-align: center;
 
-    box-sizing: border-box;
-}
+        white-space: nowrap;
+    }
 }
