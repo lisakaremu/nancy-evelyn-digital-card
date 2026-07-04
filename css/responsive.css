@@ -1,19 +1,34 @@
-/*==================================================
-    UNIFIED RESPONSIVE LAYOUT
-    Tablets + Android + iPhone + Small Screens
-==================================================*/
+/* ==========================================================
+   NANCY EVELYN DIGITAL CARD
+   FINAL RESPONSIVE STYLESHEET
+
+   Covers:
+   - Tablets
+   - Android phones
+   - iPhones
+   - Small mobile screens
+   - Landscape mobile screens
+========================================================== */
+
+
+/* ==========================================================
+   TABLET + MOBILE
+   1024px AND BELOW
+========================================================== */
 
 @media (max-width: 1024px) {
 
-    /*==================================================
-        VIEWPORT / PAGE
-    ==================================================*/
+    /* ------------------------------------------------------
+       VIEWPORT / PAGE
+    ------------------------------------------------------ */
 
     html,
     body {
         width: 100%;
         min-height: 100%;
         margin: 0;
+        padding: 0;
+
         overflow-x: hidden;
     }
 
@@ -21,19 +36,23 @@
         width: 100%;
         min-height: 100dvh;
 
+        margin: 0;
         padding: 16px;
 
         display: flex;
         justify-content: center;
         align-items: flex-start;
 
+        box-sizing: border-box;
+
         overflow-x: hidden;
     }
 
 
-    /*==================================================
-        DIGITAL CARD
-    ==================================================*/
+    /* ------------------------------------------------------
+       DIGITAL CARD
+       Portrait first, content second
+    ------------------------------------------------------ */
 
     .card {
         width: 100%;
@@ -42,21 +61,26 @@
         height: auto;
         min-height: 0;
 
+        margin: 0 auto;
+
         display: flex;
         flex-direction: column;
 
         background: var(--white);
 
         border-radius: 28px;
+
         overflow: hidden;
 
         box-shadow: var(--shadow);
+
+        box-sizing: border-box;
     }
 
 
-    /*==================================================
-        NANCY PORTRAIT
-    ==================================================*/
+    /* ------------------------------------------------------
+       PORTRAIT SECTION
+    ------------------------------------------------------ */
 
     .card-right {
         order: 1;
@@ -64,35 +88,37 @@
         width: 100%;
         height: auto;
 
-        padding: 18px 18px 0;
+        padding: 16px 16px 0;
 
         display: flex;
         justify-content: center;
         align-items: center;
 
+        box-sizing: border-box;
+
         background: var(--white);
 
-        overflow: hidden;
-
-        box-sizing: border-box;
+        overflow: visible;
     }
 
     .nancy-image {
         width: 100%;
         height: auto;
 
-        max-height: 500px;
-
         display: block;
 
-        object-fit: contain;
+        object-fit: cover;
         object-position: center center;
+
+        border-radius: 22px;
+
+        overflow: hidden;
     }
 
 
-    /*==================================================
-        LEFT CONTENT AREA
-    ==================================================*/
+    /* ------------------------------------------------------
+       CONTENT SECTION
+    ------------------------------------------------------ */
 
     .card-left {
         order: 2;
@@ -103,22 +129,21 @@
         height: auto;
         min-height: 0;
 
-        padding: 26px 20px 22px;
+        padding: 22px 22px 16px;
 
         display: flex;
         flex-direction: column;
-
         align-items: center;
-        justify-content: flex-start;
 
-        text-align: center;
+        box-sizing: border-box;
 
         overflow: visible;
 
-        box-sizing: border-box;
+        text-align: center;
     }
 
     .card-left > * {
+        width: 100%;
         max-width: 100%;
 
         margin-left: auto;
@@ -128,28 +153,26 @@
     }
 
 
-    /*==================================================
-        HERO / NAME
-    ==================================================*/
+    /* ------------------------------------------------------
+       HERO / NAME
+    ------------------------------------------------------ */
 
     .hero {
         width: 100%;
-        max-width: 100%;
 
         margin: 0 auto;
         padding: 0;
 
         display: flex;
         flex-direction: column;
-
         align-items: center;
-        justify-content: center;
 
         text-align: center;
 
         box-sizing: border-box;
     }
 
+    .hero h1,
     h1 {
         width: 100%;
         max-width: 100%;
@@ -157,8 +180,8 @@
         margin: 0 auto;
         padding: 0;
 
-        font-size: clamp(3.2rem, 13vw, 5.6rem);
-        line-height: 0.88;
+        font-size: clamp(2rem, 6.5vw, 3.4rem);
+        line-height: 0.94;
 
         text-align: center;
 
@@ -171,7 +194,6 @@
         display: block;
 
         width: 100%;
-        max-width: 100%;
 
         margin-left: auto;
         margin-right: auto;
@@ -181,16 +203,19 @@
         box-sizing: border-box;
     }
 
-    .title {
-        width: 100%;
 
-        margin: 16px auto 0;
+    /* ------------------------------------------------------
+       FOUNDING DIRECTOR
+    ------------------------------------------------------ */
+
+    .title {
+        margin: 14px auto 0;
         padding: 0;
 
-        font-size: clamp(0.56rem, 2.1vw, 0.78rem);
-        line-height: 1.25;
+        font-size: clamp(0.68rem, 1.8vw, 0.82rem);
+        line-height: 1.2;
 
-        letter-spacing: clamp(2px, 0.9vw, 5px);
+        letter-spacing: 3px;
 
         text-align: center;
 
@@ -198,22 +223,382 @@
     }
 
 
-    /*==================================================
-        BRAND LOGOS
-    ==================================================*/
+    /* ------------------------------------------------------
+       BRAND LOGOS
+    ------------------------------------------------------ */
 
     .brands {
         width: 100%;
-        max-width: 420px;
+
+        margin: 26px auto 0;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 22px;
+
+        box-sizing: border-box;
+    }
+
+    .brand {
+        flex: 1 1 0;
+        min-width: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .brand img {
+        width: auto;
+        height: auto;
+
+        max-width: 105px;
+        max-height: 68px;
+
+        display: block;
+
+        object-fit: contain;
+    }
+
+    .divider {
+        width: 1px;
+        height: 52px;
+
+        flex-shrink: 0;
+
+        margin: 0;
+
+        background: var(--gold);
+    }
+
+
+    /* ------------------------------------------------------
+       SCAN + QR SECTION
+    ------------------------------------------------------ */
+
+    .scan-section {
+        width: 100%;
+
+        margin: 28px auto 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .scan-section h3 {
+        margin: 0 0 10px;
+        padding: 0;
+
+        font-size: clamp(0.95rem, 2.6vw, 1.15rem);
+        line-height: 1.2;
+
+        text-align: center;
+    }
+
+    .qr-image {
+        width: clamp(52px, 10vw, 72px);
+        height: auto;
+
+        display: block;
+
+        margin: 0 auto;
+
+        object-fit: contain;
+    }
+
+
+    /* ------------------------------------------------------
+       TAGLINE
+    ------------------------------------------------------ */
+
+    .tagline {
+        width: 100%;
+
+        margin: 28px auto 0;
+        padding: 0 4px 4px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        visibility: visible;
+        opacity: 1;
+
+        overflow: visible;
+
+        box-sizing: border-box;
+    }
+
+    .tagline p {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+        padding: 0;
+
+        font-size: clamp(0.58rem, 1.7vw, 0.76rem);
+        line-height: 1.2;
+
+        letter-spacing: clamp(1.8px, 0.45vw, 3px);
+
+        text-align: center;
+
+        white-space: nowrap;
+
+        visibility: visible;
+        opacity: 1;
+
+        box-sizing: border-box;
+    }
+}
+
+
+/* ==========================================================
+   MOBILE
+   480px AND BELOW
+========================================================== */
+
+@media (max-width: 480px) {
+
+    /* ------------------------------------------------------
+       VIEWPORT / PAGE
+    ------------------------------------------------------ */
+
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+
+        overflow-x: hidden;
+    }
+
+    .page {
+        width: 100%;
+        min-height: 100dvh;
+
+        margin: 0;
+        padding: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        box-sizing: border-box;
+
+        overflow-x: hidden;
+    }
+
+
+    /* ------------------------------------------------------
+       DIGITAL CARD
+       Compact enough for one-glance presentation
+    ------------------------------------------------------ */
+
+    .card {
+        width: 100%;
+        max-width: 100%;
 
         height: auto;
         min-height: 0;
 
-        margin: 30px auto 0;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        background: var(--white);
+
+        border-radius: 26px;
+
+        overflow: hidden;
+
+        box-shadow: var(--shadow);
+
+        box-sizing: border-box;
+    }
+
+
+    /* ------------------------------------------------------
+       PORTRAIT
+       Reduced from previous oversized version
+       Rounded on all four corners
+    ------------------------------------------------------ */
+
+    .card-right {
+        order: 1;
+
+        width: 100%;
+        height: clamp(240px, 36vh, 330px);
+
+        margin: 0;
+        padding: 12px 12px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-sizing: border-box;
+
+        background: var(--white);
+
+        overflow: visible;
+    }
+
+    .nancy-image {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+        object-position: center 34%;
+
+        border-radius: 20px;
+
+        overflow: hidden;
+    }
+
+
+    /* ------------------------------------------------------
+       CONTENT AREA
+       More breathing room without cramping
+    ------------------------------------------------------ */
+
+    .card-left {
+        order: 2;
+
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+        min-height: 0;
+
+        margin: 0;
+        padding: 18px 16px 12px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        box-sizing: border-box;
+
+        overflow: visible;
+
+        text-align: center;
+    }
+
+    .card-left > * {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ------------------------------------------------------
+       NAME
+       NANCY + EVELYN reduced significantly
+       Closer to KAREMU scale
+    ------------------------------------------------------ */
+
+    .hero {
+        width: 100%;
+
+        margin: 0 auto;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .hero h1,
+    h1 {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+        padding: 0;
+
+        font-size: clamp(1.15rem, 5vw, 1.65rem);
+        line-height: 1.05;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .first-name,
+    .middle-name,
+    .last-name {
+        display: block;
+
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ------------------------------------------------------
+       FOUNDING DIRECTOR
+       Enlarged and readable
+    ------------------------------------------------------ */
+
+    .title {
+        margin: 12px auto 0;
+        padding: 0;
+
+        font-size: 0.72rem;
+        line-height: 1.2;
+
+        letter-spacing: 3px;
+
+        text-align: center;
+
+        white-space: nowrap;
+    }
+
+
+    /* ------------------------------------------------------
+       BRAND LOGOS
+       Enlarged from earlier mobile version
+    ------------------------------------------------------ */
+
+    .brands {
+        width: 100%;
+
+        margin: 24px auto 0;
         padding: 0 4px;
 
         display: flex;
-
         justify-content: center;
         align-items: center;
 
@@ -237,8 +622,8 @@
         width: auto;
         height: auto;
 
-        max-width: 92px;
-        max-height: 58px;
+        max-width: 96px;
+        max-height: 62px;
 
         display: block;
 
@@ -251,26 +636,25 @@
 
         flex-shrink: 0;
 
-        margin: 0 4px;
+        margin: 0;
 
         background: var(--gold);
     }
 
 
-    /*==================================================
-        SCAN + QR SECTION
-    ==================================================*/
+    /* ------------------------------------------------------
+       SCAN TO CONNECT + QR
+       Space restored between logos and scan section
+    ------------------------------------------------------ */
 
     .scan-section {
         width: 100%;
-        max-width: 100%;
 
-        margin: 30px auto 0;
+        margin: 26px auto 0;
         padding: 0;
 
         display: flex;
         flex-direction: column;
-
         align-items: center;
         justify-content: center;
 
@@ -280,19 +664,17 @@
     }
 
     .scan-section h3 {
-        width: 100%;
-
-        margin: 0 auto 12px;
+        margin: 0 0 10px;
         padding: 0;
 
-        font-size: clamp(0.88rem, 3.4vw, 1.08rem);
+        font-size: clamp(0.92rem, 4vw, 1.08rem);
         line-height: 1.2;
 
         text-align: center;
     }
 
     .qr-image {
-        width: clamp(72px, 18vw, 96px);
+        width: 58px;
         height: auto;
 
         display: block;
@@ -303,25 +685,26 @@
     }
 
 
-    /*==================================================
-        TAGLINE
-    ==================================================*/
+    /* ------------------------------------------------------
+       TAGLINE
+       Forced visible
+       Enlarged from near-invisible version
+    ------------------------------------------------------ */
 
     .tagline {
         width: 100%;
-        max-width: 100%;
 
-        min-height: 0;
-
-        margin: 30px auto 0;
-        padding: 0;
+        margin: 18px auto 0;
+        padding: 0 0 6px;
 
         display: flex;
-
         justify-content: center;
         align-items: center;
 
         text-align: center;
+
+        visibility: visible;
+        opacity: 1;
 
         overflow: visible;
 
@@ -329,374 +712,133 @@
     }
 
     .tagline p {
-        width: auto;
+        width: 100%;
         max-width: 100%;
 
         margin: 0 auto;
         padding: 0;
 
-        font-size: clamp(0.46rem, 1.8vw, 0.68rem);
-        line-height: 1.3;
+        display: block;
 
-        letter-spacing: clamp(1.5px, 0.65vw, 3px);
+        font-size: 0.66rem;
+        line-height: 1.8;
+
+        letter-spacing: 2px;
 
         text-align: center;
 
         white-space: nowrap;
+
+        visibility: visible;
+        opacity: 1;
 
         box-sizing: border-box;
     }
 }
 
 
-/*==================================================
-    SMALL PHONES
-==================================================*/
+/* ==========================================================
+   VERY SMALL MOBILE
+   380px AND BELOW
+========================================================== */
 
-/*==================================================
-    SMALL PHONES
-    Entire digital card visible in one viewport
-==================================================*/
-
-@media (max-width: 480px) {
-
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        overflow: hidden;
-    }
+@media (max-width: 380px) {
 
     .page {
-        width: 100%;
-        height: 100dvh;
-        min-height: 100dvh;
-
         padding: 8px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        overflow: hidden;
-
-        box-sizing: border-box;
     }
 
     .card {
-        width: 100%;
-        max-width: 430px;
-
-        height: calc(100dvh - 16px);
-        min-height: 0;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 42% 58%;
-
-        border-radius: 24px;
-
-        overflow: hidden;
+        border-radius: 22px;
     }
 
-
-    /* PORTRAIT */
-
     .card-right {
-        order: initial;
+        height: clamp(270px, 44vh, 360px);
 
-        grid-row: 1;
-
-        width: 100%;
-        height: 100%;
-
-        padding: 10px 14px 0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        overflow: hidden;
-
-        box-sizing: border-box;
+        padding: 10px 10px 0;
     }
 
     .nancy-image {
-    width: 100%;
-    height: 100%;
+        border-radius: 18px;
 
-    max-height: none;
-
-    display: block;
-
-    object-fit: contain;
-    object-position: center center;
-
-    border-radius: 18px;
-}
-
-
-    /* CONTENT AREA */
+        object-position: center 32%;
+    }
 
     .card-left {
-        order: initial;
-
-        grid-row: 2;
-
-        width: 100%;
-        height: 100%;
-        min-height: 0;
-
-        padding: 8px 14px 10px;
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-        justify-content: space-between;
-
-        text-align: center;
-
-        overflow: hidden;
-
-        box-sizing: border-box;
+        padding: 16px 12px 10px;
     }
 
-
-    /* NAME */
-
-    .hero {
-        width: 100%;
-
-        margin: 0 auto;
-        padding: 0;
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-        justify-content: center;
-
-        text-align: center;
-    }
-
+    .hero h1,
     h1 {
-    width: 100%;
-
-    margin: 0 auto;
-    padding: 0;
-
-    font-size: clamp(2.2rem, 10vw, 3.5rem);
-    line-height: 0.84;
-
-    text-align: center;
-}
-
-    .first-name,
-    .middle-name,
-    .last-name {
-        width: 100%;
-
-        margin-left: auto;
-        margin-right: auto;
-
-        text-align: center;
+        font-size: clamp(1.4rem, 6.8vw, 1.9rem);
+        line-height: 1;
     }
 
     .title {
-        width: 100%;
+        margin-top: 10px;
 
-        margin: 8px auto 0;
-        padding: 0;
-
-        font-size: clamp(0.42rem, 1.8vw, 0.58rem);
-        line-height: 1.1;
-
-        letter-spacing: clamp(1.5px, 0.65vw, 3px);
-
-        text-align: center;
-
-        white-space: nowrap;
+        font-size: 0.66rem;
+        letter-spacing: 2.4px;
     }
-
-
-    /* BRAND LOGOS */
 
     .brands {
-        width: 100%;
-        max-width: 320px;
+        margin-top: 20px;
 
-        margin: 10px auto 0;
-        padding: 0;
-
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-
-        gap: 10px;
-    }
-
-    .brand {
-        flex: 1 1 0;
-        min-width: 0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        gap: 14px;
     }
 
     .brand img {
-    width: auto;
-    height: auto;
-
-    max-width: 92px;
-    max-height: 58px;
-
-    display: block;
-
-    object-fit: contain;
-}   
-
-    .divider {
-        width: 1px;
-        height: 34px;
-
-        flex-shrink: 0;
-
-        margin: 0 3px;
+        max-width: 84px;
+        max-height: 56px;
     }
 
-
-    /* SCAN + QR */
+    .divider {
+        height: 42px;
+    }
 
     .scan-section {
-        width: 100%;
-
-        margin: 10px auto 0;
-        padding: 0;
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-        justify-content: center;
-
-        text-align: center;
+        margin-top: 22px;
     }
 
     .scan-section h3 {
-        width: 100%;
-
-        margin: 0 auto 5px;
-        padding: 0;
-
-        font-size: clamp(0.68rem, 3vw, 0.88rem);
-        line-height: 1.05;
-
-        text-align: center;
+        font-size: 0.9rem;
     }
 
     .qr-image {
-        width: clamp(42px, 11vw, 56px);
-        height: auto;
-
-        display: block;
-
-        margin: 0 auto;
-
-        object-fit: contain;
+        width: 54px;
     }
 
-
-    /* TAGLINE — ALWAYS VISIBLE */
-
     .tagline {
-        width: 100%;
-        max-width: 100%;
-
-        margin: 8px auto 0;
-        padding: 0;
-
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-
-        flex-shrink: 0;
-
-        text-align: center;
-
-        overflow: visible;
+        margin-top: 20px;
+        padding-bottom: 5px;
     }
 
     .tagline p {
-        width: auto;
-        max-width: 100%;
+        font-size: 0.54rem;
+        letter-spacing: 1.5px;
+    }
+}
 
-        margin: 0 auto;
-        padding: 0;
 
-        font-size: clamp(0.34rem, 1.45vw, 0.5rem);
-        line-height: 1.15;
+/* ==========================================================
+   MOBILE LANDSCAPE
+========================================================== */
 
-        letter-spacing: clamp(0.8px, 0.4vw, 1.8px);
+@media (max-width: 900px) and (orientation: landscape) {
 
-        text-align: center;
-
-        white-space: nowrap;
+    .page {
+        padding: 12px;
     }
 
-/* =========================================
-   FINAL MOBILE VISUAL REFINEMENTS
-========================================= */
+    .card {
+        max-width: 760px;
+    }
 
-/* 1. Strong soft rounding on all 4 portrait corners */
-.card-right {
-    border-radius: 22px !important;
-    overflow: hidden !important;
-}
+    .card-right {
+        height: clamp(280px, 70vh, 430px);
+    }
 
-.nancy-image {
-    border-radius: 22px !important;
-    overflow: hidden !important;
-}
-
-/* 2. Reduce NANCY / EVELYN significantly */
-.hero h1,
-.card-left .hero h1 {
-    font-size: clamp(2.15rem, 10vw, 3rem) !important;
-    line-height: 0.88 !important;
-}
-
-/* Keep all name lines centered */
-.first-name,
-.middle-name,
-.last-name {
-    width: 100% !important;
-    text-align: center !important;
-}
-}
-
-/* 3. Enlarge FOUNDING DIRECTOR */
-.title {
-    font-size: 0.72rem;
-    letter-spacing: 3px;
-    line-height: 1.2;
-    margin-top: 10px;
-}
-
-/* 4. Enlarge bottom tagline */
-.tagline p {
-    font-size: 0.62rem;
-    letter-spacing: 2.2px;
-    line-height: 1.2;
-    white-space: nowrap;
-}
-
-/* Give tagline enough breathing room */
-.tagline {
-    padding: 0 8px 8px;
-}
+    .nancy-image {
+        object-position: center 30%;
+    }
 }
