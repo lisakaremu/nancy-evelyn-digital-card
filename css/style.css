@@ -230,42 +230,56 @@ body{
 
 }
 
-/*=====================================
-           SCAN SECTION
-=====================================*/
+/*==================================================
+|  FOUNDER CTA
+==================================================*/
 
-.scan-section{
-
-    margin-top:35px;
-
-    text-align:center;
-
+.founder-cta{
+    display:flex;
+    justify-content:center;
+    margin:45px 0 35px;
 }
 
-.scan-section h3{
+.founder-button{
 
-    font-family:'Cormorant Garamond',serif;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
 
-    font-size:22px;
+    width:100%;
+    max-width:320px;
 
+    padding:18px 36px;
+
+    background:#1F2F5C;
+    color:#FFFFFF;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-family:'Montserrat', sans-serif;
+    font-size:.92rem;
     font-weight:600;
 
-    color:var(--pink);
+    letter-spacing:2px;
+    text-transform:uppercase;
 
-    margin-bottom:18px;
+    transition:all .35s ease;
 
+    /* Soft pink luxury glow */
+    box-shadow:
+        0 0 18px rgba(214, 55, 142, .18),
+        0 12px 32px rgba(214, 55, 142, .28);
 }
 
-.qr-image{
+.founder-button:hover{
 
-    width:95px;
+    transform:translateY(-3px);
 
-    height:95px;
-
-    margin:auto;
-
-    display:block;
-
+    box-shadow:
+        0 0 24px rgba(214,55,142,.25),
+        0 16px 40px rgba(214,55,142,.35);
 }
 
 /*=====================================
@@ -274,7 +288,7 @@ body{
 
 .tagline{
 
-    margin-top:-10px;
+    margin-top:10px;
 
     text-align:center;
 

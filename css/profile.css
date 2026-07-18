@@ -703,60 +703,44 @@
     CONTACT LINKS
 ==================================================*/
 
-.contact-links {
-    max-width: 860px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-
-    gap: 16px;
+.contact-links{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    width:100%;
 }
 
+.contact-link{
 
-.contact-link {
-    min-height: 62px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    padding: 16px 18px;
+    width:90%;
+    max-width:320px;
+    min-height:62px;
 
-    border:
-        1px solid
-        rgba(19, 40, 76, 0.14);
+    margin:0 auto;
 
-    border-radius: 16px;
+    padding:16px 20px;
 
-    display: flex;
+    background:#ffffff;
+    color:#182640;
 
-    justify-content: center;
+    border:1px solid rgba(19,40,76,.14);
+    border-radius:16px;
 
-    align-items: center;
+    text-decoration:none;
 
-    color: #182640;
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
 
-    background: #ffffff;
+    box-shadow:0 10px 28px rgba(19,40,76,.06);
 
-    text-decoration: none;
-
-    font-size: 0.72rem;
-
-    font-weight: 600;
-
-    letter-spacing: 1.5px;
-
-    text-transform: uppercase;
-
-    box-shadow:
-        0 10px 28px
-        rgba(19, 40, 76, 0.06);
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease,
-        color 0.3s ease;
+    box-sizing:border-box;
 }
 
 
@@ -801,14 +785,17 @@
 }
 
 
-.profile-footer .footer-signature {
-    margin-top: 10px;
+.profile-footer .footer-signature{
 
-    color: #d7b46a;
+    margin-top:10px;
 
-    font-size: 0.62rem;
+    color:#d7b46a;
 
-    letter-spacing: 3px;
+    font-size:0.58rem;
 
-    text-transform: uppercase;
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+    white-space:nowrap;
 }
