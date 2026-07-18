@@ -83,23 +83,24 @@
     ------------------------------------------------------ */
 
     .card-right {
-        order: 1;
 
-        width: 100%;
-        height: auto;
+    order: 1;
 
-        padding: 16px 16px 0;
+    width: 100%;
+    min-height: 360px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    padding: 20px 20px 10px;
 
-        box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        background: var(--white);
+    background: var(--white);
 
-        overflow: visible;
-    }
+    overflow: visible;
+
+    box-sizing: border-box;
+}
 
     .nancy-image {
         width: 100%;
@@ -776,10 +777,10 @@
     }
 
     .nancy-image {
-        border-radius: 18px;
+    border-radius: 18px;
 
-        object-position: center 32%;
-    }
+    object-position: center 20%;
+}
 
     .card-left {
         padding: 16px 12px 10px;
@@ -855,7 +856,7 @@
         height: clamp(280px, 70vh, 430px);
     }
 
-    .nancy-image {
-        object-position: center 30%;
-    }
+   .nancy-image {
+    object-position: center 18%;
+}
 }

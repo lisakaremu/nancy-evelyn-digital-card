@@ -1,0 +1,368 @@
+/*=========================================================
+    NANCY EVELYN KAREMU
+    PROFILE RESPONSIVE STYLESHEET
+    Mobile First
+=========================================================*/
+
+@media (max-width:768px){
+
+/*=========================================================
+    PAGE
+=========================================================*/
+
+.profile-page{
+
+    overflow-x:hidden;
+}
+
+.profile-wrapper{
+
+    width:100%;
+
+    overflow-x:hidden;
+}
+
+
+/*=========================================================
+    HERO
+=========================================================*/
+
+.profile-hero{
+
+    display:flex;
+
+    flex-direction:column;
+
+    width:100%;
+
+    height:auto;
+
+    min-height:auto;
+
+    overflow:hidden;
+
+    padding:0 20px 20px;
+}
+
+
+/*=========================================================
+    PORTRAIT
+=========================================================*/
+
+.profile-portrait{
+
+    width:100%;
+
+    min-width:100%;
+
+    height:auto;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    margin: 20px auto 0;
+}
+
+
+.profile-image{
+
+    width:100%;
+
+    height: 300px;
+
+    display:block;
+
+    object-fit:cover;
+
+    object-position:center top;
+
+    border-radius:28px;
+}
+
+
+/*=========================================================
+    INTRODUCTION
+=========================================================*/
+
+.profile-intro{
+
+    width:100%;
+
+    padding: 24px 20px 8px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+
+.profile-intro::before{
+
+    margin-bottom:22px;
+}
+
+
+/*=========================================================
+    FOUNDING DIRECTOR
+=========================================================*/
+
+.profile-eyebrow{
+
+    font-size:.92rem;
+
+    letter-spacing:3px;
+
+    margin-bottom:9px;
+
+    text-align:center;
+}
+
+
+/*=========================================================
+    MAIN NAME
+=========================================================*/
+
+.profile-intro h1{
+
+    font-size:clamp(3.5rem,10vw,3.4rem);
+
+    line-height:0.95;
+
+    margin-bottom:9px;
+}
+
+
+/*=========================================================
+    TAGLINE
+=========================================================*/
+
+.profile-tagline{
+
+    font-size:1rem;
+
+    line-height:1.2;
+
+    letter-spacing:0.9px;
+
+    white-space:normal;
+
+    text-align:center;
+
+    margin-bottom:12px;
+
+    margin-top:18px;
+
+    color: #888888;
+}
+
+
+/*=========================================================
+    GENERAL SECTIONS
+=========================================================*/
+
+section{
+
+    padding:70px 24px;
+}
+
+
+/*=========================================================
+    SECTION HEADING
+=========================================================*/
+
+.section-heading{
+
+    margin-bottom:40px;
+
+    text-align:center;
+}
+
+
+.section-kicker{
+
+    font-size:.72rem;
+
+    letter-spacing:5px;
+
+    margin-bottom:18px;
+}
+
+
+.section-heading h2{
+
+    font-size:2.8rem;
+
+    line-height:1.15;
+}
+
+
+/*=========================================================
+    PARAGRAPHS
+=========================================================*/
+
+.profile-wrapper p{
+
+    font-size:1rem;
+
+    line-height:1.7;
+
+    text-align:center;
+}
+
+
+/*=========================================================
+    BRAND GRID
+=========================================================*/
+
+.brand-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    align-items:center;
+}
+
+
+/*=========================================================
+    BRAND CARD
+=========================================================*/
+
+.profile-brand-card{
+
+    width:99%;
+
+    max-width:450px;
+
+    padding:20px 24px;
+
+    border-radius:28px;
+
+    text-align:center;
+}
+
+
+/*=========================================================
+    LOGO
+=========================================================*/
+
+.profile-brand-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:18px;
+}
+
+
+.profile-brand-logo img{
+
+    width:150px;
+
+    height:auto;
+}
+
+.profile-brand-card p{
+
+    font-size:1.05rem;
+
+    line-height:1.7;
+
+    text-align:center;
+
+    margin: 0 0 12px;
+}
+
+
+/*=========================================================
+    BUTTON
+=========================================================*/
+
+.brand-link{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    max-width:240px;
+
+    margin:5px auto 0;
+
+    padding:12px 10px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    letter-spacing:2px;
+
+    white-space:nowrap;
+
+    font-size:.82rem;
+}
+
+
+/*=========================================
+|  CONNECT
+=========================================*/
+
+.profile-connect{
+    padding:70px 20px 50px;
+    text-align:center;
+}
+
+.profile-connect .section-heading{
+    margin-bottom:40px;
+}
+
+.contact-links{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:16px;
+    width:100%;
+}
+
+.contact-link{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+    max-width:340px;
+
+    padding:18px 24px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    box-sizing:border-box;
+}
+
+/*=========================================================
+    FOOTER
+=========================================================*/
+
+.profile-footer{
+
+    padding:50px 24px;
+
+    text-align:center;
+}
+
+}
